@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hardcoat Kustomz - Premium Harley-Davidson Parts & Services</title>
+<style>
+    :root {
+        --primary-color: #d32f2f;
+        --secondary-color: #212121;
+        --accent-color: #ffc107;
+        --text-color: #333;
+        --light-bg: #f4f4f4;
+        --white: #ffffff;
+    }
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        line-height: 1.6;
+        color: var(--text-color);
+        margin: 0;
+        padding: 0;
+    }
+    header {
+        background-color: var(--secondary-color);
+        color: var(--white);
+        padding: 1rem 0;
+        text-align: center;
+        border-bottom: 4px solid var(--primary-color);
+    }
+    .logo-container {
+        padding: 10px;
+        background: transparent;
+    }
+    .logo-container img {
+        max-width: 300px;
+        height: auto;
+    }
+    nav {
+        background: #333;
+        color: #fff;
+        padding: 0.5rem;
+        text-align: center;
+    }
+    nav a {
+        color: #fff;
+        margin: 0 15px;
+        text-decoration: none;
+        font-weight: bold;
+    }
+    .container {
+        padding: 20px;
+        max-width: 1200px;
+        margin: auto;
+    }
+    section {
+        margin-bottom: 40px;
+        padding: 20px;
+        background: var(--light-bg);
+        border-radius: 8px;
+    }
+    h2 {
+        color: var(--primary-color);
+        border-bottom: 2px solid var(--primary-color);
+        padding-bottom: 10px;
+    }
+    .package-card {
+        background: var(--white);
+        padding: 15px;
+        margin: 15px 0;
+        border-left: 5px solid var(--accent-color);
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    .options-comparison {
+        display: flex;
+        gap: 20px;
+    }
+    .option-box {
+        flex: 1;
+        background: var(--white);
+        padding: 15px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+    form label {
+        display: block;
+        margin-top: 10px;
+        font-weight: bold;
+    }
+    form input, form select, form textarea {
+        width: 100%;
+        padding: 8px;
+        margin-top: 5px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+    button {
+        background-color: var(--primary-color);
+        color: var(--white);
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        font-size: 16px;
+        cursor: pointer;
+        margin-top: 15px;
+    }
+    button:hover {
+        background-color: #b71c1c;
+    }
+    #customPaintSection {
+        display: none;
+    }
+</style>
+</head>
+<body>
+
+<header>
+    <div class="logo-container">
+        <!-- Transparent background logo placeholder -->
+        <img src="hardcoat_logo_transparent.png" alt="Hardcoat Kustomz Logo" onerror="this.style.display='none';">
+        <h1>Hardcoat Kustomz</h1>
+    </div>
+</header>
+
+<nav>
+    <a href="#parts">Harley Parts</a>
+    <a href="#core-exchange">Core Exchange</a>
+    <a href="#packages">Packages</a>
+    <a href="#paint-options">Paint & Primer</a>
+    <a href="#booking">Book Customization</a>
+</nav>
+
+<div class="container">
+
+    <!-- Harley Parts Section -->
+    <section id="parts">
+        <h2>Harley-Davidson 4" Stretched & Wrapped Parts</h2>
+        <p>Elevate your ride with our premium aftermarket bodywork. Designed for precision fitment and aggressive styling.</p>
+        <div>
+            <h3>Stretched Saddlebags & Front Fenders</h3>
+            <p>Our 4" stretched bags provide that sleek, the ground look while maintaining full functionality. Pair them with our custom wrapped front fenders for a cohesive profile.</p>
+        </div>
+    </section>
+
+    <!-- Core Exchange Program -->
+    <section id="core-exchange">
+        <h2>Take-Off Core Exchange Program</h2>
+        <p>Minimize downtime with our Core Exchange Program. Send us your take-off parts, or use our inventory to get your customized parts quicker.</p>
+        <div class="package-card">
+            <h4>How it Works:</h4>
+            <ol>
+                <li>Select your upgrade package.</li>
+                <li>Pay a core deposit (refunded upon receipt of your acceptable take-off parts).</li>
+                <li>Receive your customized parts and send your originals back in the same packaging.</li>
+            </ol>
+        </div>
+    </section>
+
+    <!-- Packages Section -->
+    <section id="packages">
+        <h2>Customization Packages</h2>
+        
+        <div class="package-card">
+            <h3>Package 3</h3>
+            <p>The ultimate overhaul. Includes fully stretched components, custom inserts, and now featuring upgraded tank consoles for a seamless flow across your tank.</p>
+        </div>
+
+        <div class="options-comparison">
+            <div class="option-box">
+                <h4>Cut-Out Rear Option</h4>
+                <p>Designed for riders retaining specific exhaust setups requiring cutouts. Precision cut for a clean, factory-finish clearance.</p>
+            </div>
+            <div class="option-box">
+                <h4>Underlay Rear Option</h4>
+                <p>Ideal for custom exhaust routing. Provides a smooth, uninterrupted extended line beneath the bags for a radical custom appearance.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Paint & Primer Options Section -->
+    <section id="paint-options">
+        <h2>Paint & Primer Options</h2>
+        <p><strong>Important Note:</strong> All parts come primed directly out of the shop, ready for final prep and paint.</p>
+        <p>We offer additional cost services for color-matching of basic factory colors. Want something truly unique? We can match custom paint colors provided we have the specific paint code.</p>
+        <p><em>Convenience Option:</em> You can choose to have your parts shipped directly to our partnered paint shop to eliminate the hassle of transporting them yourself.</p>
+    </section>
+
+    <!-- Booking Section -->
+    <section id="booking">
+        <h2>Book Your Customization</h2>
+        <form id="bookingForm">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" required>
+
+            <label for="email">Email Address</label>
+            <input type="email" id="email" required>
+
+            <label for="bikeModel">Harley Model & Year</label>
+            <input type="text" id="bikeModel" required>
+
+            <label for="packageSelect">Select Package</label>
+            <select id="packageSelect" required>
+                <option value="">--Choose a Package--</option>
+                <option value="pkg1">Package 1 (Basics)</option>
+                <option value="pkg2">Package 2 (Stretched)</option>
+                <option value="pkg3">Package 3 (Full Build + Tank Console)</option>
+            </select>
+
+            <label for="rearOption">Rear Fender Setup</label>
+            <select id="rearOption" required>
+                <option value="cutout">Cut-Out</option>
+                <option value="underlay">Underlay</option>
+            </select>
+
+            <label for="paintService">Paint Services</label>
+            <select id="paintService" onchange="toggleCustomPaintField()" required>
+                <option value="primed">Primed Only (Standard)</option>
+                <option value="basicMatch">Color Match Basic Color (Additional Cost)</option>
+                <option value="customMatch">Custom Paint Match (Requires Code)</option>
+                <option value="sendToShop">Send Parts to Our Paint Shop</option>
+            </select>
+
+            <div id="customPaintSection">
+                <label for="paintCode">Enter Paint Code</label>
+                <input type="text" id="paintCode" placeholder="e.g., Vivid Black - DHW">
+            </div>
+
+            <button type="submit">Submit Request</button>
+        </form>
+    </section>
+
+</div>
+
+<script>
+    function toggleCustomPaintField() {
+        var paintService = document.getElementById("paintService").value;
+        var customSection = document.getElementById("customPaintSection");
+        if (paintService === "customMatch") {
+            customSection.style.display = "block";
+        } else {
+            customSection.style.display = "none";
+        }
+    }
+
+    document.getElementById("bookingForm").addEventListener("submit", function(event){
+        event.preventDefault();
+        alert("Thank you for your request! We will be in touch shortly regarding your build.");
+    });
+</script>
+
+</body>
+</html>
